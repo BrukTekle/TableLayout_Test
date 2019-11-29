@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TableLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:stretchColumns="*"
+        android:id="@+id/layoutId"
+        >
+        <EditText
+            android:id="@+id/txtVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Android Version"/>
+        <EditText
+            android:id="@+id/txtCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Android Code Name"/>
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add"/>
+
+        <TableRow android:background="@color/colorAccent"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:text="version"/>
+            <TextView
+                android:text="Code Name"/>
+        </TableRow>
+        <TableRow android:background="@color/colorAccent"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:text="Android 9.0"/>
+            <TextView
+                android:text="Pie"/>
+        </TableRow>
+        <TableRow android:background="@color/colorAccent" android:layout_marginBottom="10dp">
+            <TextView
+                android:text="Android 8.0"/>
+            <TextView
+                android:text="Oreo"/>
+        </TableRow>
+
+    </TableLayout>
+    </ScrollView>
